@@ -1,0 +1,23 @@
+[project]
+name = "hiver-support-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "faiss-cpu>=1.15.0",
+    "groq>=1.7.0",
+    "python-dotenv>=1.2.3",
+    "sentence-transformers>=6.0.1",
+    "streamlit>=1.63.0",
+]
+
+[project.scripts]
+hiver-support-agent = "hiver_support_agent:main"
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
